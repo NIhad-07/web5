@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  serv7:
+    image: ansible/ansible:default
+    command: sleep infinity
+    restart: always
+    ports:
+      - "8070:80"
+    volumes:
+      - dfg:/app/data
+volumes:
+  dfg:
