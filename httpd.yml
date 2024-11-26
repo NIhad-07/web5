@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ror1:
+    image: httpd:latest
+    container_name: my
+    ports:
+      - "1234:80"
+    volumes:
+      - abc:/data
+    networks:
+      - network3
+networks:
+  network3:
+volumes:
+  abc:  
